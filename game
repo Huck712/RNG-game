@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+//Function prototype
+void compareInts(int random, int input);
+
+int main()
+{
+  srand(time(0));
+  int random = rand() % 100 + 1;
+  int input;
+  
+ do {
+  cout << "See if you can guess my number!" << endl;
+  cout << endl;
+  
+  cout << "Hmm, let me think of one..." << "Ok, I've got it." << endl;
+  cout << endl;
+  
+  cout << "I have chosen between 1 - 100" << "What is your guess?" << endl;
+  cin >> input;
+  
+  cout << endl;
+  
+  compareInts(random, input);
+  } while (random != input);
+  
+return 0;
+}
+
+void compareInts(rand, inp)
+{
+  if (rand < inp)
+  {
+    cout << "Your guess was greater than my number." << endl;
+    cout << "Come on try harder! Guess again: " << endl;  
+  }
+  else if (rand > inp)
+  {
+    cout << "Your guess was greater than my number." << endl;
+    cout << "Come on try harder! Guess again: " << endl;
+  }
+  else 
+  {
+    cout << "You got it!" << endl;  
+}
