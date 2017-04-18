@@ -36,12 +36,12 @@ void compareInts(rand, inp)
   if (rand < inp)
   {
     cout << "Your guess was less than my number." << endl;
-    cout << "Come on try harder! Guess again: " << endl;  
+    cout << "Come on try harder!" << endl;  
   }
   else if (rand > inp)
   {
     cout << "Your guess was greater than my number." << endl;
-    cout << "Come on try harder! Guess again: " << endl;
+    cout << "Come on try harder!" << endl;
   }
   else 
   {
